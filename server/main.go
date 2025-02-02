@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	pb "github.com/raphaelrreis/vehicle-tracking"
+	pb "github.com/raphaelrreis/vehicle-tracking/server/tracking"
 	"google.golang.org/grpc"
 )
 

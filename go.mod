@@ -1,8 +1,7 @@
-module github.com/raphaelrreis/vehicle-tracking
+module github.com/raphaelreis/vehicle-tracking
 
 go 1.22
 
-toolchain go1.23.5
 
 require (
 	google.golang.org/grpc v1.70.0

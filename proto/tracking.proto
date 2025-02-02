@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package tracking;
+
+option go_package = "github.com/raphaelreis/vehicle-tracking/server/tracking";
+
+service VehicleTrackingService {
+  rpc StreamLocation (Empty) returns (stream VehicleLocation);
+}
+
+message Empty {}
+
+message VehicleLocation {
+  string vehicle_id = 1;
+  double latitude = 2;
+  double longitude = 3;
+  int64 timestamp = 4;
+}

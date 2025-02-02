@@ -2,7 +2,9 @@ syntax = "proto3";
 
 package tracking;
 
-option go_package = "github.com/raphaelreis/vehicle-tracking/server/tracking";
+option go_package = "github.com/raphaelrreis/vehicle-tracking";
+
+
 
 service VehicleTrackingService {
   rpc StreamLocation (Empty) returns (stream VehicleLocation);
